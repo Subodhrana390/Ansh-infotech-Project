@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Solutions</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="py-4 bg-white shadow-sm">
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="../../assests/img/Logo.png"
+            alt="Logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+
+        <!-- Navbar Toggle for Mobile -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Navbar Links (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/about.html"
+            >About Us</a
+          >
+
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 flex items-center">
+              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
+            </button>
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white shadow-lg p-4 hidden group-hover:block max-h-96 overflow-y-auto"
+            >
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <h6 class="font-bold text-gray-800">Web Development</h6>
+                  <p class="text-gray-500 text-sm">
+                    Click the brush below to unveil endless possibilities for
+                    your dream website! ⬇️
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <h6 class="font-bold text-gray-800">Web Designing</h6>
+                  <p class="text-gray-500 text-sm">
+                    Web Magic Unfurled: Craft captivating interfaces, watch
+                    conversions soar!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+                <div>
+                  <h6 class="font-bold text-gray-800">Machine Learning</h6>
+                  <p class="text-gray-500 text-sm">
+                    Beyond Automation: Master AI Alchemy, Craft Intelligent
+                    Futures!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
+          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+        </div>
+
+        <!-- Register Button (Desktop) -->
+        <a
+          class="bg-blue-600 text-white px-6 py-2 rounded-full hidden lg:block hover:bg-blue-700 transition duration-300"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Home</a
+        >
+        <a
+          class="block text-gray-700 hover:text-blue-600 py-2"
+          href="../../pages/about.html"
+          >About Us</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Courses</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+          >Blogs</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Contact Us</a
+        >
+        <a
+          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+    </nav>
+
+    <div
+    class="relative min-h-screen py-12 flex flex-col md:flex-row items-center px-20 bg-black/50"
+    style="background-image: url('https://tis-tis-io-asset-prd.s3.eu-central-1.amazonaws.com/services_224e0670e5.png?w=1920&q=100'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"
+  >
+    <!-- Black Overlay -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+  
+    <!-- Content Wrapper to ensure proper positioning above overlay -->
+    <div class="relative z-10 md:w-1/2 text-center md:text-left">
+      <h1 class="text-3xl md:text-6xl font-bold text-yellow-500">
+        We Accelerate Your Business
+      </h1>
+      <p class="text-white mt-4 text-xl text-justify">
+        We translate your business needs into actual solutions by offering
+        professional and custom software services. Your technological journey
+        starts here.
+      </p>
+    </div>
+  </div>
+  
+
+    <div
+      class="flex justify-center items-center space-x-2 text-6xl font-semibold bg-gray-800 py-6"
+    >
+      <i class="fas fa-laptop-code text-blue-600 mr-4"></i>
+      <span class="text-white">Software Development</span>
+    </div>
+
+    <div>
+      <h1>Java Development</h1>
+      <p>We love Java because it is...</p>
+    </div>
+  </body>
+</html>

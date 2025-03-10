@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assests/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav class="max-w-7xl py-4 bg-white shadow-sm">
+      <div class="container mx-auto flex items-center justify-between px-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="../../assests/img/Logo.png"
+            alt="Logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+
+        <!-- Navbar Toggle for Mobile -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Navbar Links (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/about.html"
+            >About Us</a
+          >
+
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 flex items-center">
+              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
+            </button>
+            <div
+              class="absolute left-36 transform -translate-x-1/2 w-[1100px] bg-white shadow-lg p-10 hidden group-hover:block max-h-96 overflow-y-auto z-10 rounded-lg"
+            >
+              <div class="grid grid-cols-4 gap-10">
+                <!-- Column 1: Web Development & Web Designing -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-code text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Web Development</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Click the brush below to unveil endless possibilities for
+                    your dream website! ⬇️
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-paint-brush text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Web Designing</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Web Magic Unfurled: Craft captivating interfaces, watch
+                    conversions soar!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+
+                <!-- Column 2: Machine Learning & Data Science -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-brain text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Machine Learning</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Beyond Automation: Master AI Alchemy, Craft Intelligent
+                    Futures!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-chart-line text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Data Science</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Unlock the power of data: Transform raw information into
+                    actionable insights.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+
+                <!-- Column 3: Mobile App Development & UI/UX Design -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-mobile-alt text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">
+                      Mobile App Development
+                    </h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Build the next big app: From concept to launch, we've got
+                    you covered.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-pencil-ruler text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">UI/UX Design</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Design experiences that delight: User-centric designs for
+                    seamless interactions.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+
+                <!-- Column 4: Cloud Computing & Cybersecurity -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-cloud text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Cloud Computing</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Scale with ease: Harness the power of the cloud for your
+                    business needs.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-shield-alt text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Cybersecurity</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Protect your digital assets: Stay ahead of threats with
+                    cutting-edge security solutions.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
+          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+        </div>
+
+        <!-- Register Button (Desktop) -->
+        <a
+          class="bg-blue-600 text-white px-6 py-2 rounded-full hidden lg:block hover:bg-blue-700 transition duration-300"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Home</a
+        >
+        <a
+          class="block text-gray-700 hover:text-blue-600 py-2"
+          href="../../pages/about.html"
+          >About Us</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Courses</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+          >Blogs</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Contact Us</a
+        >
+        <a
+          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+    </nav>
+
+    <section
+      class="relative w-full min-h-screen flex items-center bg-fixed bg-cover bg-center overflow-hidden"
+      style="
+        background-image: url('https://img.freepik.com/premium-photo/group-diverse-business-people-working-together-having-meeting_695793-1294.jpg?w=2000');
+      "
+    >
+      <div
+        class="relative w-full min-h-screen grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-24 bg-black/50"
+      >
+        <!-- Left Content -->
+        <div class="my-2 text-white flex flex-col justify-center items-start">
+          <h3
+            class="w-max font-medium text-sm border border-white rounded-lg py-1 px-4"
+          >
+            Meet AIT
+          </h3>
+          <h1 class="text-xl md:text-7xl font-bold py-4">
+            Empowering your <span class="text-blue-400">businesses</span> 
+          </h1>
+
+          <p class="text-gray-300 font-medium text-justify">
+            Ludhiana's leading IT solutions provider. We specialize in Cyber
+            Security, Digital Marketing, Artificial Intelligence, Data Science,
+            Data Analytics and Web Development(MERN Stack). Our expert team
+            delivers innovative and reliable solutions tailored to your unique
+            needs, driving growth and excellence in the digital age.
+          </p>
+
+          <button
+            class="mt-4 px-6 py-2 bg-blue-700 text-white text-base font-normal hover:bg-blue-600 transition-all"
+          >
+            View Solutions
+            <i class="fa-solid fa-arrow-up animate-bounce px-2"></i>
+          </button>
+        </div>
+
+        <!-- Floating Images -->
+        <div class="absolute right-[40%] bottom-0">
+          <img
+            src="../assests/img/square.webp"
+            class="w-24 h-24 opacity-70 animate-pulse"
+            alt=""
+          />
+        </div>
+        <div class="absolute -right-[5%] -top-12">
+          <img
+            src="../assests/img/square.webp"
+            class="w-32 h-32 opacity-70 animate-pulse"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="relative bg-cover bg-center bg-fixed min-h-screen">
+      <div
+        class="relative px-6 md:px-20 py-12 text-white bg-fixed bg-center bg-cover"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      >
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Text Section -->
+          <div class="md:w-1/2 space-y-6 p-6 rounded-lg">
+            <h1 class="text-4xl font-bold leading-tight">
+              Master In-Demand IT Skills with Our Training Programs
+            </h1>
+            <p class="">
+              Stay ahead in the tech world with our expert-led IT training
+              courses. We offer hands-on experience and industry-recognized
+              certifications to help you build a successful career in
+              technology.
+            </p>
+
+            <!-- Expertise Box -->
+            <div
+              class="bg-opacity-20 p-4 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+            >
+              <h2 class="text-xl font-semibold t">Why Choose Us?</h2>
+              <p class="text-lg">
+                <span class="font-bold text-2xl">10,000+</span> Students Trained
+              </p>
+              <p class="text-lg">
+                <span class="font-bold text-2xl">100%</span> Job Assistance
+              </p>
+            </div>
+
+            <!-- Course List -->
+            <h3 class="text-xl font-semibold mt-4">Popular Courses:</h3>
+            <ul class="mt-2 space-y-2 list-disc pl-5">
+              <li class="flex items-center">
+                <i class="fas fa-laptop-code mr-2"></i> Full-Stack Web
+                Development
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-shield-alt mr-2"></i> Cybersecurity & Ethical
+                Hacking
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-cloud mr-2"></i> Cloud Computing & DevOps
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-robot mr-2"></i> AI & Machine Learning
+              </li>
+            </ul>
+
+            <!-- Call to Action -->
+            <a
+              href="#"
+              class="inline-block mt-6 bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
+            >
+              Explore Courses
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3
+      class="w-full mx-auto max-w-4xl text-center text-2xl md:text-4xl font-bold py-4"
+    >
+      We have built a
+      <span class="text-blue-700"> purpose-driven </span> platform in the
+      Metaverse to drive action and cooperation and to
+      <span class="text-blue-700"> revolutionize</span> progress
+    </h3>
+
+    <div
+      id="videoContainer"
+      class="relative w-full max-w-8xl h-96 bg-cover bg-center cursor-pointer flex items-center justify-center"
+      onclick="playVideo()"
+      style="
+        background-image: url('https://img.freepik.com/premium-photo/corporate-business-people-working-busy-marketing-office-space-planning-strategy-books-reading-email-laptop-work-businessman-businesswoman-workers-startup-advertising-company_590464-79063.jpg?w=2000');
+        background-attachment: fixed;
+        background-size: cover;
+      "
+    >
+      <!-- Play Icon -->
+      <div
+        class="bg-black bg-opacity-50 p-5 rounded-full transition-transform duration-200 hover:scale-110"
+      >
+        <svg
+          class="w-12 h-12 text-white"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M6.5 4.5a1 1 0 0 1 1.515-.857l7 4.5a1 1 0 0 1 0 1.714l-7 4.5A1 1 0 0 1 6.5 13.5v-9z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-20 py-12 text-center">
+      <h1 class="text-3xl lg:text-5xl font-bold mb-6">
+        Make Your Business Future-Proof
+      </h1>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        Anticipate challenges and embrace innovation with cutting-edge
+        solutions.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+        <!-- Development -->
+        <div
+          class="p-6 bg-white shadow-md rounded-xl text-center hover:shadow-lg transition"
+        >
+          <div class="text-blue-500 text-5xl">
+            <i class="fas fa-code"></i>
+          </div>
+          <h2 class="text-2xl font-semibold mt-4">Development</h2>
+          <p class="text-gray-600 mt-3">
+            Crafting tailored software solutions with AI-powered
+            decision-making, predictive analytics, and modern web development
+            (MERN Stack).
+          </p>
+        </div>
+
+        <!-- IT Solutions -->
+        <div
+          class="p-6 bg-white shadow-md rounded-xl text-center hover:shadow-lg transition"
+        >
+          <div class="text-green-500 text-5xl">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h2 class="text-2xl font-semibold mt-4">IT Solutions</h2>
+          <p class="text-gray-600 mt-3">
+            Empowering businesses with Cloud Computing, Cyber Security
+            solutions, and seamless Digital Transformation strategies.
+          </p>
+        </div>
+
+        <!-- Skill Development -->
+        <div
+          class="p-6 bg-white shadow-md rounded-xl text-center hover:shadow-lg transition"
+        >
+          <div class="text-purple-500 text-5xl">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h2 class="text-2xl font-semibold mt-4">Skill Development</h2>
+          <p class="text-gray-600 mt-3">
+            Upskilling individuals with Cyber Security, Digital Marketing (SEO,
+            Social Media), and Cloud Computing (AWS, Azure, Google Cloud).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- digital economy  -->
+    <div
+      class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-8"
+    >
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img
+          src="https://old4.commonsupport.com/callix/wp-content/uploads/2020/06/featured-image-6.png"
+          alt="Digital Solutions"
+          class="w-full md:w-96 h-auto"
+        />
+      </div>
+
+      <!-- Content Section -->
+      <div class="w-full md:w-1/2 space-y-4">
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+          We're Building Business for Your Digital Economy
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Forget just surviving in the digital jungle - we're building empires
+          for your digital economy.
+          <span class="font-semibold text-black">ANSH InfoTech</span> crafts
+          bespoke IT solutions and training that empower you to conquer
+          complexity, optimize operations, and skyrocket profits. From cloud
+          fortresses shielding your data to agile teams coding the future, we're
+          your ultimate digital ally.
+        </p>
+
+        <!-- Highlights Section -->
+        <div class="flex flex-col sm:flex-row items-start gap-6 text-gray-700">
+          <!-- Satisfaction -->
+          <div class="flex items-center gap-3">
+            <div class="bg-blue-500 text-white p-4 rounded-full">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-2xl font-semibold">100%</p>
+              <p class="text-gray-500">Satisfaction</p>
+            </div>
+          </div>
+
+          <!-- Projects Completed -->
+          <div class="flex items-center gap-3">
+            <div class="bg-green-500 text-white p-4 rounded-full">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 10h11M9 21v-8m-6 8V10m9-4l4-4m4 0l-4 4m0 0v10m0-10l-4-4"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-2xl font-semibold">650+</p>
+              <p class="text-gray-500">Projects Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common Question -->
+    <div class="container mx-auto py-12 px-4 max-w-4xl">
+      <h1 class="text-3xl font-bold text-center mb-10 text-gray-800">
+        Frequently Asked Questions
+      </h1>
+
+      <div class="space-y-4" id="faq-container">
+        <!-- FAQ Item 1 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <button
+            class="flex justify-between items-center w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="font-semibold text-lg text-gray-800"
+              >What Benefits Can You Guarantee?</span
+            >
+            <i
+              class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+            ></i>
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <div class="px-6 py-4 bg-gray-50 text-gray-600">
+              <p>All projects we take up carry the following guarantees:</p>
+              <ul class="list-disc ml-5 mt-2 space-y-1">
+                <li>
+                  <span class="font-medium">Confidentiality guarantee:</span>
+                  All client details will be kept confidential
+                </li>
+                <li>
+                  <span class="font-medium">Price guarantee:</span> Minimum 60%
+                  cost-saving over on-site development
+                </li>
+                <li>
+                  <span class="font-medium">Results guarantee:</span>
+                  Progress-linked payments weighted toward the end.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <button
+            class="flex justify-between items-center w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="font-semibold text-lg text-gray-800"
+              >What is the Quality of People You Employ?</span
+            >
+            <i
+              class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+            ></i>
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <div class="px-6 py-4 bg-gray-50 text-gray-600">
+              <p>
+                The quality of a software development company is ultimately the
+                quality of its people. Our people are very strong for software
+                projects:
+              </p>
+              <ul class="list-disc ml-5 mt-2 space-y-1">
+                <li>Are English-speaking Graduate/Post-Graduate Engineers</li>
+                <li>
+                  Have multiple years of industry experience, or are outstanding
+                  new engineers
+                </li>
+                <li>
+                  All people have experience in off-shore projects with
+                  US/European clients
+                </li>
+                <li>
+                  Most people are from premier engineering institutes or have
+                  proven exceptional abilities
+                </li>
+                <li>Are industry-certified</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 (Optional, you can add more) -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <button
+            class="flex justify-between items-center w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors focus:outline-none"
+            onclick="toggleFaq(this)"
+          >
+            <span class="font-semibold text-lg text-gray-800"
+              >How Do You Ensure Project Success?</span
+            >
+            <i
+              class="fas fa-chevron-down text-blue-500 transition-transform duration-300"
+            ></i>
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+          >
+            <div class="px-6 py-4 bg-gray-50 text-gray-600">
+              <p>We ensure project success through:</p>
+              <ul class="list-disc ml-5 mt-2 space-y-1">
+                <li>Regular communication and progress updates</li>
+                <li>Agile development methodologies</li>
+                <li>Comprehensive quality assurance processes</li>
+                <li>Dedicated project managers overseeing every aspect</li>
+                <li>Transparent reporting and milestone tracking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="mx-auto flex justify-center text-sm font-medium my-4 bg-white px-6 py-2"
+      >
+        Still have a question?
+        <span class="text-blue-600 ml-2"> Feel free to ask </span>
+      </button>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="w-full py-16 px-4 bg-blue-600">
+      <!-- Testimonial Header -->
+      <div class="text-center mb-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+          Client Testimonials
+        </h1>
+        <p class="max-w-2xl text-white font-medium">
+          At Ansh InfoTech IT Solutions, we take pride in the positive impact
+          we've had on our clients' businesses. Here are some testimonials from
+          our satisfied customers:
+        </p>
+      </div>
+
+      <!-- Testimonial Slider -->
+      <div class="w-full px-2 md:px-10">
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg p-8 md:p-10 relative">
+                <div
+                  class="text-blue-500 text-6xl absolute top-4 left-6 opacity-10"
+                >
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="relative z-10">
+                  <p class="text-gray-700 text-lg mb-8 italic">
+                    "Luminous transformed our agricultural business with their
+                    custom software solution. Their team developed an intuitive
+                    crop management system that has increased our yield by 30%
+                    and significantly reduced water waste. Their ongoing support
+                    has been invaluable."
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="https://reactheme.com/products/wordpress/luminos/wp-content/uploads/2025/01/01-2.webp"
+                      alt="Client"
+                      class="w-16 h-16 rounded-full object-cover mr-4"
+                    />
+                    <div>
+                      <h3 class="font-semibold text-gray-800">Michanel Gen</h3>
+                      <h4 class="text-blue-600">Founder</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg p-8 md:p-10 relative">
+                <div
+                  class="text-blue-500 text-6xl absolute top-4 left-6 opacity-10"
+                >
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="relative z-10">
+                  <p class="text-gray-700 text-lg mb-8 italic">
+                    "Working with Luminous IT Solutions has been a game-changer
+                    for our healthcare practice. Their patient management system
+                    streamlined our operations and reduced administrative
+                    workload by 45%. The team's expertise and responsiveness
+                    exceeded our expectations."
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="https://reactheme.com/products/wordpress/luminos/wp-content/uploads/2025/01/01-2.webp"
+                      alt="Client"
+                      class="w-16 h-16 rounded-full object-cover mr-4"
+                    />
+                    <div>
+                      <h3 class="font-semibold text-gray-800">Sarah Johnson</h3>
+                      <h4 class="text-blue-600">Healthcare Director</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg p-8 md:p-10 relative">
+                <div
+                  class="text-blue-500 text-6xl absolute top-4 left-6 opacity-10"
+                >
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="relative z-10">
+                  <p class="text-gray-700 text-lg mb-8 italic">
+                    "Luminous helped us migrate our entire infrastructure to the
+                    cloud seamlessly. The transition was smooth, with minimal
+                    disruption to our operations. Their team's technical
+                    expertise and project management skills are top-notch. We've
+                    seen a 40% reduction in IT costs since implementation."
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="https://reactheme.com/products/wordpress/luminos/wp-content/uploads/2025/01/01-2.webp"
+                      alt="Client"
+                      class="w-16 h-16 rounded-full object-cover mr-4"
+                    />
+                    <div>
+                      <h3 class="font-semibold text-gray-800">Robert Chen</h3>
+                      <h4 class="text-blue-600">CTO, FinTech Solutions</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="bg-white rounded-lg shadow-lg p-8 md:p-10 relative">
+                <div
+                  class="text-blue-500 text-6xl absolute top-4 left-6 opacity-10"
+                >
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="relative z-10">
+                  <p class="text-gray-700 text-lg mb-8 italic">
+                    "The e-commerce platform Luminous built for our retail
+                    business has transformed our online presence. Sales have
+                    increased by 75% in just six months, and the integrated
+                    analytics tools have helped us make data-driven decisions.
+                    Their team continues to provide excellent support and
+                    enhancements."
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="https://reactheme.com/products/wordpress/luminos/wp-content/uploads/2025/01/01-2.webp"
+                      alt="Client"
+                      class="w-16 h-16 rounded-full object-cover mr-4"
+                    />
+                    <div>
+                      <h3 class="font-semibold text-gray-800">
+                        Emily Martinez
+                      </h3>
+                      <h4 class="text-blue-600">E-commerce Director</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <div class="swiper-button-next text-blue-600 after:content-['']">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="swiper-button-prev text-blue-600 after:content-['']">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination mt-10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stay in Touch Section -->
+    <div
+      class="max-w-full mx-auto bg-white p-6 shadow-lg text-center flex flex-col md:flex-row items-center gap-6"
+    >
+      <!-- Heading -->
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 md:mb-0 md:w-1/3">
+        Let's Stay in Touch
+      </h2>
+
+      <!-- Form -->
+      <form
+        action="#"
+        method="POST"
+        class="flex flex-col md:flex-row items-center gap-4 w-full md:w-2/3"
+      >
+        <!-- Name Input -->
+        <div
+          class="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-full md:w-1/3"
+        >
+          <i class="fas fa-user text-gray-500 mr-3"></i>
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full outline-none bg-transparent"
+            required
+          />
+        </div>
+
+        <!-- Email Input -->
+        <div
+          class="flex items-center border border-gray-300 rounded-lg px-3 py-2 w-full md:w-1/3"
+        >
+          <i class="fas fa-envelope text-gray-500 mr-3"></i>
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full outline-none bg-transparent"
+            required
+          />
+        </div>
+
+        <!-- Subscribe Button -->
+        <button
+          type="submit"
+          class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition w-full md:w-auto"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <!-- reCAPTCHA Notice -->
+    <p class="text-xs text-gray-500 text-center mt-4">
+      This site is protected by reCAPTCHA and the Google
+      <a
+        href="https://policies.google.com/privacy"
+        class="text-blue-600 hover:underline"
+        >Privacy Policy</a
+      >
+      and
+      <a
+        href="https://policies.google.com/terms"
+        class="text-blue-600 hover:underline"
+        >Terms of Service</a
+      >
+      apply.
+    </p>
+
+    <footer class="bg-white">
+      <div class="w-full py-10 px-6 md:px-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- Company Info -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <img
+              src="../../assests/img/Logo.png"
+              class="w-28 h-28 object-contain"
+              alt="Company Logo"
+            />
+            <p class="mt-4 text-sm text-gray-700 leading-relaxed text-left">
+              Ansh InfoTech is a leading IT solutions provider offering
+              innovative technology services. We build world-class digital
+              products, software, and branding solutions.
+            </p>
+          </div>
+
+          <!-- Services Section -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Services</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Technologies
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                AI Learning
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                IT Strategies
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                IT Consulting
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Company</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                About Us
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Career
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Our Team
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">News</li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Partners
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Contact
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Support</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">FAQs</li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Help Center
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Customer Support
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Feedback
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Legal</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Privacy Policy
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Terms of Service
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Disclaimer
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Social Media Section -->
+      <div
+        class="border-t border-gray-200 py-6 px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-y-4"
+      >
+        <!-- Copyright Text -->
+        <p class="text-black/75 text-sm text-center md:text-left">
+          © 2025 Ansh InfoTech. All Rights Reserved.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-6">
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-facebook-f text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-twitter text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-instagram text-lg"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="../assests/js/custom.js"></script>
+  </body>
+</html>

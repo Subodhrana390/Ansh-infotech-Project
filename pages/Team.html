@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assests/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="py-4 bg-white shadow-sm">
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="../../assests/img/Logo.png"
+            alt="Logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+
+        <!-- Navbar Toggle for Mobile -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Navbar Links (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/about.html"
+            >About Us</a
+          >
+
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 flex items-center">
+              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
+            </button>
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white shadow-lg p-4 hidden group-hover:block max-h-96 overflow-y-auto"
+            >
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <h6 class="font-bold text-gray-800">Web Development</h6>
+                  <p class="text-gray-500 text-sm">
+                    Click the brush below to unveil endless possibilities for
+                    your dream website! ⬇️
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <h6 class="font-bold text-gray-800">Web Designing</h6>
+                  <p class="text-gray-500 text-sm">
+                    Web Magic Unfurled: Craft captivating interfaces, watch
+                    conversions soar!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+                <div>
+                  <h6 class="font-bold text-gray-800">Machine Learning</h6>
+                  <p class="text-gray-500 text-sm">
+                    Beyond Automation: Master AI Alchemy, Craft Intelligent
+                    Futures!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
+          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+        </div>
+
+        <!-- Register Button (Desktop) -->
+        <a
+          class="bg-blue-600 text-white px-6 py-2 rounded-full hidden lg:block hover:bg-blue-700 transition duration-300"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Home</a
+        >
+        <a
+          class="block text-gray-700 hover:text-blue-600 py-2"
+          href="../../pages/about.html"
+          >About Us</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Courses</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+          >Blogs</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Contact Us</a
+        >
+        <a
+          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      class="relative bg-fixed bg-cover bg-center min-h-screen flex items-center"
+      style="
+        background-image: url('https://reactheme.com/products/wordpress/luminos/wp-content/uploads/2025/02/01-3.webp');
+      "
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-24 py-10 md:py-24 items-center text-white"
+      >
+        <!-- Text Section -->
+        <div class="flex flex-col justify-center">
+          <h1 class="text-4xl md:text-6xl font-medium py-4 leading-tight">
+            Meet Our Creative Team Members
+          </h1>
+          <p class="text-base text-justify leading-relaxed">
+            Our team is a group of skilled and dedicated professionals who bring
+            their expertise, creativity, and commitment to every project. We
+            believe that great work stems from collaboration.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto max-w-5xl my-10 px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Beliefs</h2>
+      <h3 class="text-4xl font-extrabold">
+        <span class="text-5xl text-blue-950"> This is our</span> <br />
+        <span class="text-7xl text-yellow-500"> culture </span>
+      </h3>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+        <div class="border border-gray-300 shadow-lg rounded-lg p-6">
+          <h4 class="text-3xl font-semibold text-gray-800">Open and Direct</h4>
+          <p class="text-gray-600 mt-2">
+            We are transparent and open. We communicate clearly and directly.
+            This is how we work, because we see this as the key to a successful
+            collaboration.
+          </p>
+        </div>
+
+        <div class="border border-gray-300 shadow-lg rounded-lg p-6">
+          <h4 class="text-3xl font-semibold text-gray-800">Skilled</h4>
+          <p class="text-gray-600 mt-2">
+            Our highly skilled IT professionals specialize in Java, PHP, React,
+            Angular, Vue.js, and AWS. Clean code, simplicity, code reviews, and
+            test automation guarantee long-term stability and maintainability of
+            your solutions.
+          </p>
+        </div>
+
+        <div class="border border-gray-300 shadow-lg rounded-lg p-6">
+          <h4 class="text-3xl font-semibold text-gray-800">Solution-driven</h4>
+          <p class="text-gray-600 mt-2">
+            We combine our technical skills with business acumen and a critical
+            mindset to deliver the best possible solution for your business.
+            Adding value to your business is our ultimate goal.
+          </p>
+        </div>
+
+        <div class="border border-gray-300 shadow-lg rounded-lg p-6">
+          <h4 class="text-3xl font-semibold text-gray-800">Trustworthy</h4>
+          <p class="text-gray-600 mt-2">
+            We are always here to support clients with advice and action. We
+            take ownership, responsibility, and pride in delivering the best
+            possible solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership Team -->
+    <div class="py-16 px-6 bg-white text-center">
+      <div class="">
+        <h4 class="text-xl font-normal text-gray-700 mb-6">
+          Find out more about our team
+        </h4>
+        <h1 class="text-4xl font-bold text-gray-900">
+          This is our <span class="text-blue-600">team</span>
+        </h1>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="swiper teamSwiper">
+        <div class="swiper-wrapper">
+          <!-- Team Member 1 -->
+          <div class="swiper-slide flex flex-col items-center p-6">
+            <img
+              src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1715929875/ghtiglcgfxlbxbht1ra2.jpg"
+              alt="Anshu Aneja"
+              class="w-56 h-56 object-cover rounded-full shadow-lg"
+            />
+            <h2 class="text-xl font-medium text-gray-800 mt-4">Anshu Aneja</h2>
+            <p class="text-black/80 text-sm">Managing Director</p>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="swiper-slide flex flex-col items-center p-6">
+            <img
+              src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1715929981/ezktqmf2uvt1hulpyuv4.jpg"
+              alt="Ashish Jalota"
+              class="w-56 h-56 object-cover rounded-full shadow-lg"
+            />
+            <h2 class="text-xl font-medium text-gray-800 mt-4">
+              Ashish Jalota
+            </h2>
+            <p class="text-black/80 text-sm">Chief Executive Officer</p>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="swiper-slide flex flex-col items-center p-6">
+            <img
+              src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1715797667/plncpxnixaalgj97irel.jpg"
+              alt="Paramvir Singh"
+              class="w-56 h-56 object-cover rounded-full shadow-lg"
+            />
+            <h2 class="text-xl font-medium text-gray-800 mt-4">
+              Paramvir Singh
+            </h2>
+            <p class="text-black text-sm">Senior Web Developer</p>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="swiper-slide flex flex-col items-center p-6">
+            <img
+              src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1715928669/fixbwwnxmmt8bmfufb4n.jpg"
+              alt="Jaspreet Singh"
+              class="w-56 h-56 object-cover rounded-full shadow-lg"
+            />
+            <h2 class="text-xl font-medium text-gray-800 mt-4">
+              Jaspreet Singh
+            </h2>
+            <p class="text-black text-sm">Senior Cyber Security Expert</p>
+          </div>
+
+          <!-- Team Member 5 -->
+          <div class="swiper-slide flex flex-col items-center p-6">
+            <img
+              src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1724157167/frbphcfappd2tpp06iw8.jpg"
+              alt="Md. Faisal Jaman"
+              class="w-56 h-56 object-cover rounded-full shadow-lg"
+            />
+            <h2 class="text-xl font-medium text-gray-800 mt-4">
+              Md. Faisal Jaman
+            </h2>
+            <p class="text-black text-sm">Penetration Tester</p>
+          </div>
+
+          <!-- Team Member 6 -->
+          <div class="swiper-slide flex flex-col items-center p-6">
+            <img
+              src="https://res.cloudinary.com/dohhbq1ly/image/upload/v1716463589/mlwwb0mw9ezeogu7e8ev.png"
+              alt="Kuldeep Prajapati"
+              class="w-56 h-56 object-cover rounded-full shadow-lg"
+            />
+            <h2 class="text-xl font-medium text-gray-800 mt-4">
+              Kuldeep Prajapati
+            </h2>
+            <p class="text-black text-sm">Senior AI/ML Engineer</p>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next text-blue-600 after:content-['']">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="swiper-button-prev text-blue-600 after:content-['']">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-10"></div>
+      </div>
+    </div>
+
+    <div class="container mx-auto max-w-3xl text-center px-6">
+      <h1 class="text-4xl font-bold text-gray-900">
+        Do you want to work on exciting and challenging projects together with
+        our expert developers?
+      </h1>
+      <button
+        class="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-blue-700 transition"
+      >
+        Meet Our Team
+      </button>
+    </div>
+
+    <footer class="bg-white">
+      <div class="w-full py-10 px-6 md:px-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- Company Info -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <img
+              src="../../assests/img/Logo.png"
+              class="w-28 h-28 object-contain"
+              alt="Company Logo"
+            />
+            <p class="mt-4 text-sm text-gray-700 leading-relaxed text-left">
+              Ansh InfoTech is a leading IT solutions provider offering
+              innovative technology services. We build world-class digital
+              products, software, and branding solutions.
+            </p>
+          </div>
+
+          <!-- Services Section -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Services</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Technologies
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                AI Learning
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                IT Strategies
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                IT Consulting
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Company</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                About Us
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Career
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Our Team
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">News</li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Partners
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Contact
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Support</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">FAQs</li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Help Center
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Customer Support
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Feedback
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Legal</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Privacy Policy
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Terms of Service
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Disclaimer
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Social Media Section -->
+      <div
+        class="border-t border-gray-200 py-6 px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-y-4"
+      >
+        <!-- Copyright Text -->
+        <p class="text-black/75 text-sm text-center md:text-left">
+          © 2025 Ansh InfoTech. All Rights Reserved.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-6">
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-facebook-f text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-twitter text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-instagram text-lg"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assests/js/custom.js"></script>
+  </body>
+</html>
