@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assests/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="max-w-7xl py-4 bg-white shadow-sm">
+      <div class="container mx-auto flex items-center justify-between px-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="../../assests/img/Logo.png"
+            alt="Logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+
+        <!-- Navbar Toggle for Mobile -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Navbar Links (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/about.html"
+            >About Us</a
+          >
+
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 flex items-center">
+              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
+            </button>
+            <div
+              class="absolute left-36 transform -translate-x-1/2 w-[1100px] bg-white shadow-lg p-10 hidden group-hover:block max-h-96 overflow-y-auto z-10 rounded-lg"
+            >
+              <div class="grid grid-cols-4 gap-10">
+                <!-- Column 1: Web Development & Web Designing -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-code text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Web Development</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Click the brush below to unveil endless possibilities for
+                    your dream website! ⬇️
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-paint-brush text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Web Designing</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Web Magic Unfurled: Craft captivating interfaces, watch
+                    conversions soar!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+
+                <!-- Column 2: Machine Learning & Data Science -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-brain text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Machine Learning</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Beyond Automation: Master AI Alchemy, Craft Intelligent
+                    Futures!
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-chart-line text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Data Science</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Unlock the power of data: Transform raw information into
+                    actionable insights.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+
+                <!-- Column 3: Mobile App Development & UI/UX Design -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-mobile-alt text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">
+                      Mobile App Development
+                    </h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Build the next big app: From concept to launch, we've got
+                    you covered.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-pencil-ruler text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">UI/UX Design</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Design experiences that delight: User-centric designs for
+                    seamless interactions.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+
+                <!-- Column 4: Cloud Computing & Cybersecurity -->
+                <div>
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-cloud text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Cloud Computing</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Scale with ease: Harness the power of the cloud for your
+                    business needs.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+
+                  <div class="flex items-center gap-2">
+                    <i class="fas fa-shield-alt text-blue-600"></i>
+                    <h6 class="font-bold text-gray-800">Cybersecurity</h6>
+                  </div>
+                  <p class="text-gray-500 text-sm mt-2">
+                    Protect your digital assets: Stay ahead of threats with
+                    cutting-edge security solutions.
+                  </p>
+                  <span class="text-blue-600 text-sm hover:underline"
+                    >Learn More</span
+                  >
+                  <hr class="my-2" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
+          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+        </div>
+
+        <!-- Register Button (Desktop) -->
+        <a
+          class="bg-blue-600 text-white px-6 py-2 rounded-full hidden lg:block hover:bg-blue-700 transition duration-300"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Home</a
+        >
+        <a
+          class="block text-gray-700 hover:text-blue-600 py-2"
+          href="../../pages/about.html"
+          >About Us</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Courses</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+          >Blogs</a
+        >
+        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
+          >Contact Us</a
+        >
+        <a
+          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+          href="#"
+          >Get in Touch</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero  -->
+    <div
+      class="relative min-h-screen flex items-center justify-center bg-fixed bg-cover bg-center"
+      style="
+        background-image: url('https://img.freepik.com/free-photo/three-positive-students-browsing-tablet-computer-together_1262-15303.jpg?t=st=1741609109~exp=1741612709~hmac=10cee03d0e969c3229367de8a11c6b3afc079ec56c083023098a4fb0ceaebb62&w=1060');
+        background-attachment: fixed;
+      "
+    >
+      <!-- Dark Overlay for Better Readability -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <!-- Grid Content -->
+      <div
+        class="relative grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-sm p-6 rounded-lg shadow-lg max-w-5xl w-full mx-4"
+      >
+        <!-- Text Section -->
+        <div class="flex flex-col justify-center p-6">
+          <h1 class="text-4xl font-bold text-white mb-4">
+            What is Tech Academy
+          </h1>
+          <p class="text-white text-lg text-justify">
+            Our IT Skill Training program is designed for students and
+            professionals who want to enhance their expertise in software
+            development, cloud computing, cybersecurity, data analytics, and
+            more. Learn from industry experts and gain hands-on experience to
+            build a strong foundation for a successful tech career. Join us
+            today and future-proof your skills!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <section class="container max-w-5xl mx-auto my-10 px-4">
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug text-center mb-8"
+      >
+        What can you learn here?
+      </h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Digital Marketing -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              1
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">
+              Digital Marketing
+            </h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Learn SEO, social media marketing, and PPC advertising. Master
+            digital strategies to grow online businesses.
+          </p>
+        </div>
+
+        <!-- Web Development -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-green-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              2
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">Web Development</h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Learn HTML, CSS, JavaScript, and frameworks like React. Build
+            dynamic websites and web applications.
+          </p>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-red-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              3
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">
+              Mobile App Development
+            </h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Create Android and iOS apps using Flutter or React Native. Learn
+            backend integration for seamless user experience.
+          </p>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-purple-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              4
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">
+              AI & Machine Learning
+            </h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Learn Python, TensorFlow, and AI algorithms. Develop smart
+            applications using deep learning and data science.
+          </p>
+        </div>
+
+        <!-- Data Science -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-yellow-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              5
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">Data Science</h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Analyze big data using Python, R, and SQL. Master data
+            visualization, predictive modeling, and analytics.
+          </p>
+        </div>
+
+        <!-- Cyber Security -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-indigo-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              6
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">Cyber Security</h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Learn ethical hacking, network security, and encryption. Protect
+            digital assets from cyber threats and attacks.
+          </p>
+        </div>
+
+        <!-- UI/UX Designing -->
+        <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-teal-500 text-white font-bold rounded-full mr-4 text-lg"
+            >
+              7
+            </div>
+            <h2 class="text-lg font-semibold text-gray-800">UI/UX Designing</h2>
+          </div>
+          <p class="text-gray-600 mt-2">
+            Master design tools like Figma and Adobe XD. Create intuitive user
+            interfaces and seamless user experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-full my-10 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-6">
+        <!-- Image Section -->
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/teacher-smart-instructor-grey-suit-classroom-with-computer-whiteboard-explaining-geometry_140725-163417.jpg?t=st=1741610013~exp=1741613613~hmac=db334a4e96256e4dd9e22a5fbcbc15a8c6ae3b67f92bbb4379db9c1965b2dec2&w=1060"
+            alt="Mentor explaining in classroom"
+            class="rounded-lg shadow-md w-full"
+          />
+        </div>
+
+        <!-- Text Section -->
+        <div>
+          <h1 class="text-5xl font-bold text-gray-900 mb-4">
+            How does the program work?
+          </h1>
+          <p class="text-gray-700 leading-relaxed text-justify">
+            The program lasts for <strong>3-4 months</strong>, depending on your
+            progress. You will work with a
+            <strong>dedicated mentor</strong> through a hybrid model—some days
+            in the office, some from home. The program is
+            <strong>part-time</strong> (20 hours per week), making it flexible
+            for students.
+          </p>
+          <p class="text-gray-700 mt-3">
+            During the selection process, we will choose
+            <strong>2 backend</strong> and
+            <strong>2 frontend</strong> applicants to participate in the
+            program.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto my-10 px-4 max-w-4xl">
+      <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">
+          Why Should You Apply?
+        </h1>
+        <p class="text-gray-700 leading-relaxed">
+          <strong>Knowledge is power!</strong> Our training program helps you
+          <strong>master in-demand technologies</strong> that universities don’t
+          cover. With a <strong>dedicated mentor</strong>, you’ll get
+          personalized guidance, answers to your questions, and hands-on
+          experience.
+        </p>
+        <p class="text-gray-700 mt-3">
+          By the end of the program, you will gain real-world skills and
+          possibly even receive a job offer in the tech industry!
+        </p>
+      </div>
+    </section>
+
+    <section class="container mx-auto max-w-4xl my-10 px-4">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">
+          What Are the Conditions of Application?
+        </h1>
+        <ul class="list-none text-gray-700 leading-relaxed">
+          <li class="flex items-start gap-2">
+            <span
+              class="bg-green-600 text-white font-semibold w-6 h-6 flex items-center justify-center rounded-full"
+              >1</span
+            >
+            <strong>Basic knowledge</strong> of software development (prior
+            experience is a plus).
+          </li>
+          <li class="flex items-start gap-2">
+            <span
+              class="bg-green-600 text-white font-semibold w-6 h-6 flex items-center justify-center rounded-full"
+              >2</span
+            >
+            <strong>Commitment of 20 hours per week</strong> for learning and
+            practice.
+          </li>
+          <li class="flex items-start gap-2">
+            <span
+              class="bg-green-600 text-white font-semibold w-6 h-6 flex items-center justify-center rounded-full"
+              >3</span
+            >
+            <strong>Own a laptop or computer</strong> to complete assignments.
+          </li>
+          <li class="flex items-start gap-2">
+            <span
+              class="bg-green-600 text-white font-semibold w-6 h-6 flex items-center justify-center rounded-full"
+              >4</span
+            >
+            <strong>Good English proficiency</strong> for effective learning.
+          </li>
+          <li class="flex items-start gap-2">
+            <span
+              class="bg-green-600 text-white font-semibold w-6 h-6 flex items-center justify-center rounded-full"
+              >5</span
+            >
+            <strong> Educational Eligibility: </strong> Must have completed 10th
+            grade and be a maximum of B.Tech pursuing.
+          </li>
+          <li class="flex items-start gap-2">
+            <span
+              class="bg-green-600 text-white font-semibold w-6 h-6 flex items-center justify-center rounded-full"
+              >6</span
+            >
+            <strong>Passion & dedication</strong> to successfully complete the
+            program.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+      <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+        <i class="fas fa-graduation-cap text-blue-600"></i> University
+        Internship
+      </h2>
+
+      <!-- When can I apply? -->
+      <div class="mt-4">
+        <h3 class="text-lg font-semibold flex items-center gap-2 text-gray-900">
+          <i class="fas fa-calendar-alt text-green-600"></i> When can I apply?
+        </h3>
+        <p class="mt-2 text-gray-700">
+          At <strong>TIS</strong>, we welcome internship applications during
+          <strong>spring</strong> as part of our
+          <strong>Tech Academy mentor program</strong>. Applications are
+          typically open in <strong>February and March</strong>. Please follow
+          our <strong>social media</strong> channels for the latest updates.
+        </p>
+        <p class="mt-2 text-red-500 font-medium">
+          <i class="fas fa-exclamation-circle"></i> Note: We cannot accept or
+          review applications outside of this period.
+        </p>
+      </div>
+
+      <!-- How can I apply? -->
+      <div class="mt-6">
+        <h3 class="text-lg font-semibold flex items-center gap-2 text-gray-900">
+          <i class="fas fa-envelope text-blue-600"></i> How can I apply?
+        </h3>
+        <p class="mt-2 text-gray-700">
+          Once the application period opens, please send your application to
+          <a
+            href="mailto:recruitment@theitsolutions.io"
+            class="text-blue-600 font-medium hover:underline"
+            >recruitment@theitsolutions.io</a
+          >.
+        </p>
+        <p class="mt-2 text-gray-700">
+          When applying, make sure to specify the program you are interested in:
+        </p>
+        <ul class="mt-2 list-none space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-code text-purple-600"></i>
+            <strong>Backend Development</strong>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-paint-brush text-pink-600"></i>
+            <strong>Frontend Development</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-white">
+      <div class="w-full py-10 px-6 md:px-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- Company Info -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <img
+              src="../../assests/img/Logo.png"
+              class="w-28 h-28 object-contain"
+              alt="Company Logo"
+            />
+            <p class="mt-4 text-sm text-gray-700 leading-relaxed text-left">
+              Ansh InfoTech is a leading IT solutions provider offering
+              innovative technology services. We build world-class digital
+              products, software, and branding solutions.
+            </p>
+          </div>
+
+          <!-- Services Section -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Services</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Technologies
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                AI Learning
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                IT Strategies
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                IT Consulting
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Company</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                About Us
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Career
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Our Team
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">News</li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Partners
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Contact
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Support</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">FAQs</li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Help Center
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Customer Support
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Feedback
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-lg font-semibold text-gray-900">Legal</h2>
+            <ul class="space-y-2 mt-2">
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Privacy Policy
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Terms of Service
+              </li>
+              <li class="text-gray-600 hover:text-blue-700 transition">
+                Disclaimer
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Social Media Section -->
+      <div
+        class="border-t border-gray-200 py-6 px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-y-4"
+      >
+        <!-- Copyright Text -->
+        <p class="text-black/75 text-sm text-center md:text-left">
+          © 2025 Ansh InfoTech. All Rights Reserved.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-6">
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-facebook-f text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-twitter text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="#" class="text-black/75 hover:text-[#1c35a1] transition">
+            <i class="fab fa-instagram text-lg"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

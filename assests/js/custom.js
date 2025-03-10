@@ -26,12 +26,6 @@ document.addEventListener("scroll", function () {
   videoContainer.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
 });
 
-function playVideo() {
-  document.getElementById("videoContainer").innerHTML = `
-    <iframe class="w-full h-96" src="https://www.youtube.com/embed/tVbtTL_sJHI?autoplay=1" frameborder="0" allowfullscreen></iframe>
-  `;
-}
-
 let openFaq = null;
 function toggleFaq(button) {
   if (!button) return;
