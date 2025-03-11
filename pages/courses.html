@@ -8,6 +8,107 @@
     <link rel="stylesheet" href="./assests/css/style.css" />
   </head>
   <body>
+    <nav class="max-w-7xl py-4 bg-white shadow-sm">
+      <div
+        class="container mx-auto flex items-center justify-between px-10 md:px-20"
+      >
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="../../assests/img/Logo.png"
+            alt="Logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+
+        <!-- Desktop Navbar -->
+        <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="/"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/about.html"
+            >About Us</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/services.html"
+            >Courses</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/Team.html"
+            >Team</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/contact.html"
+            >Contact Us</a
+          >
+        </div>
+
+        <!-- Register Button (Desktop) -->
+        <a
+          class="bg-blue-600 text-white px-6 py-2 rounded-full hidden lg:block hover:bg-blue-700 transition duration-300"
+          href="#"
+          >Get in Touch</a
+        >
+
+        <!-- Mobile Navbar Toggle -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Separate Mobile Navbar -->
+      <div
+        class="lg:hidden fixed top-0 left-0 w-full h-full bg-white z-20 hidden"
+        id="mobile-menu"
+      >
+        <div class="p-6">
+          <button
+            class="text-gray-700 text-2xl absolute top-4 right-6"
+            id="menu-close"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="flex flex-col space-y-4 mt-12">
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+              >Home</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/about.html"
+              >About Us</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/services.html"
+              >Courses</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/Team.html"
+              >Team</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/contact.html"
+              >Contact Us</a
+            >
+            <a
+              class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+              href="#"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <div class="bg-[#1e2652] max-w-3xl md:max-w-full py-12 px-6">
       <div class="max-w-5xl mx-auto text-center">
@@ -305,6 +406,6 @@
     </div>
 
     <!-- Custom JS  -->
-    <script src="./assests/js/custom.js"></script>
+    <script src="../assests/js/custom.js"></script>
   </body>
 </html>

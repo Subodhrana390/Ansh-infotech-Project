@@ -15,32 +15,26 @@
     />
 
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assests/css/style.css" />
   </head>
 
   <body>
-    <nav class="py-4 bg-white shadow-sm">
-      <div class="container mx-auto flex items-center justify-between px-4">
+    <nav class="max-w-7xl py-4 bg-white shadow-sm">
+      <div
+        class="container mx-auto flex items-center justify-between px-10 md:px-20"
+      >
         <!-- Brand Logo -->
-        <a href="#" class="flex items-center">
+        <a href="/" class="flex items-center">
           <img
-            src="../../assests/img/Logo.png"
+            src="./assests/img/Logo.png"
             alt="Logo"
             class="w-16 h-16 rounded-full"
           />
         </a>
 
-        <!-- Navbar Toggle for Mobile -->
-        <button
-          class="lg:hidden text-gray-700 focus:outline-none"
-          id="menu-toggle"
-        >
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-
-        <!-- Navbar Links (Desktop) -->
+        <!-- Desktop Navbar -->
         <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
-          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="/"
             >Home</a
           >
           <a
@@ -48,54 +42,9 @@
             href="../../pages/about.html"
             >About Us</a
           >
-
-          <!-- Courses Dropdown -->
-          <div class="relative group">
-            <button class="text-gray-700 hover:text-blue-600 flex items-center">
-              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
-            </button>
-            <div
-              class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white shadow-lg p-4 hidden group-hover:block max-h-96 overflow-y-auto"
-            >
-              <div class="grid grid-cols-2 gap-4">
-                <div>
-                  <h6 class="font-bold text-gray-800">Web Development</h6>
-                  <p class="text-gray-500 text-sm">
-                    Click the brush below to unveil endless possibilities for
-                    your dream website! ⬇️
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <h6 class="font-bold text-gray-800">Web Designing</h6>
-                  <p class="text-gray-500 text-sm">
-                    Web Magic Unfurled: Craft captivating interfaces, watch
-                    conversions soar!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-                <div>
-                  <h6 class="font-bold text-gray-800">Machine Learning</h6>
-                  <p class="text-gray-500 text-sm">
-                    Beyond Automation: Master AI Alchemy, Craft Intelligent
-                    Futures!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
-          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/services.html">Courses</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/Team.html">Team</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/contact.html">Contact Us</a>
         </div>
 
         <!-- Register Button (Desktop) -->
@@ -104,37 +53,58 @@
           href="#"
           >Get in Touch</a
         >
+
+        <!-- Mobile Navbar Toggle -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
       </div>
 
-      <!-- Mobile Menu (Hidden by Default) -->
-      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Home</a
-        >
-        <a
-          class="block text-gray-700 hover:text-blue-600 py-2"
-          href="../../pages/about.html"
-          >About Us</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Courses</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
-          >Blogs</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Contact Us</a
-        >
-        <a
-          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
-          href="#"
-          >Get in Touch</a
-        >
+      <!-- Separate Mobile Navbar -->
+      <div
+        class="lg:hidden fixed top-0 left-0 w-full h-full bg-white z-20 hidden"
+        id="mobile-menu"
+      >
+        <div class="p-6">
+          <button
+            class="text-gray-700 text-2xl absolute top-4 right-6"
+            id="menu-close"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="flex flex-col space-y-4 mt-12">
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+              >Home</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/about.html"
+              >About Us</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/services.html"
+              >Courses</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/Team.html"
+              >Team</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/contact.html"
+              >Contact Us</a
+            >
+            <a
+              class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+              href="#"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
 
     <div
-      class="relative min-h-screen py-12 flex flex-col md:flex-row items-center px-6 md:px-20 bg-black/50"
+      class="relative min-h-screen py-12 flex flex-col md:flex-row justify-center items-start md:items-center px-6 md:px-20 bg-black/50"
       style="
         background-image: url('https://tis-tis-io-asset-prd.s3.eu-central-1.amazonaws.com/services_224e0670e5.png?w=1920&q=100');
         background-repeat: no-repeat;
@@ -305,7 +275,7 @@
     <!-- Cyber Security -->
     <div class="p-6 max-w-full mx-auto px-6 md:px-20">
       <h1
-        class="text-5xl font-bold flex items-center mb-6 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-transparent bg-clip-text"
+        class="text-4xl md:text-5xl font-bold flex items-center py-5 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-transparent bg-clip-text leading-relaxed"
       >
         <i class="fa-solid fa-shield-halved mr-2"></i> Cyber Security
       </h1>
@@ -377,7 +347,7 @@
     <!-- Cloud Computing -->
     <div class="p-6 max-w-full mx-auto px-6 md:px-20">
       <h1
-        class="text-5xl font-bold flex items-center mb-6 bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-600 text-transparent bg-clip-text"
+        class="text-4xl md:text-5xl font-bold flex items-center py-5 bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-600 text-transparent bg-clip-text leading-relaxed"
       >
         <i class="fa-solid fa-cloud mr-2"></i> Cloud Computing
       </h1>
@@ -451,7 +421,7 @@
     <!-- Machine Learning -->
     <div class="p-6 max-w-full mx-auto px-6 md:px-20">
       <h1
-        class="text-5xl font-bold flex items-center mb-6 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-transparent bg-clip-text"
+        class="text-4xl md:text-5xl font-bold flex items-center py-5 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-transparent bg-clip-text leading-relaxed"
       >
         <i class="fa-solid fa-robot mr-2"></i> Machine Learning
       </h1>
@@ -523,7 +493,7 @@
     <!-- Data Science -->
     <div class="p-6 max-w-full mx-auto px-6 md:px-20">
       <h1
-        class="text-5xl font-bold flex items-center mb-6 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-transparent bg-clip-text"
+        class="text-5xl font-bold flex items-center mb-6 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-transparent bg-clip-text leading-tight"
       >
         <i class="fa-solid fa-database mr-2"></i> Data Science
       </h1>
@@ -804,5 +774,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assests/js/custom.js"></script>
   </body>
 </html>

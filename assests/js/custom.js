@@ -19,13 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   loadTailwind();
 });
 
-document.addEventListener("scroll", function () {
-  let scrollPosition = window.scrollY;
-  let videoContainer = document.getElementById("videoContainer");
-
-  videoContainer.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
-});
-
 let openFaq = null;
 function toggleFaq(button) {
   if (!button) return;
@@ -77,4 +70,18 @@ initializeSwiper(".teamSwiper", {
   slidesPerView: 1,
   autoplay: { delay: 1000 },
   breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } },
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+const menuClose = document.getElementById("menu-close");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  console.log("click")
+  
+});
+
+menuClose.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
 });

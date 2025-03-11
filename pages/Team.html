@@ -11,36 +11,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
   <body>
-    <nav class="py-4 bg-white shadow-sm">
-      <div class="container mx-auto flex items-center justify-between px-4">
+    <nav class="max-w-7xl py-4 bg-white shadow-sm">
+      <div
+        class="container mx-auto flex items-center justify-between px-10 md:px-20"
+      >
         <!-- Brand Logo -->
-        <a href="#" class="flex items-center">
+        <a href="/" class="flex items-center">
           <img
-            src="../../assests/img/Logo.png"
+            src="./assests/img/Logo.png"
             alt="Logo"
             class="w-16 h-16 rounded-full"
           />
         </a>
 
-        <!-- Navbar Toggle for Mobile -->
-        <button
-          class="lg:hidden text-gray-700 focus:outline-none"
-          id="menu-toggle"
-        >
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-
-        <!-- Navbar Links (Desktop) -->
+        <!-- Desktop Navbar -->
         <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
-          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="/"
             >Home</a
           >
           <a
@@ -48,54 +40,21 @@
             href="../../pages/about.html"
             >About Us</a
           >
-
-          <!-- Courses Dropdown -->
-          <div class="relative group">
-            <button class="text-gray-700 hover:text-blue-600 flex items-center">
-              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
-            </button>
-            <div
-              class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white shadow-lg p-4 hidden group-hover:block max-h-96 overflow-y-auto"
-            >
-              <div class="grid grid-cols-2 gap-4">
-                <div>
-                  <h6 class="font-bold text-gray-800">Web Development</h6>
-                  <p class="text-gray-500 text-sm">
-                    Click the brush below to unveil endless possibilities for
-                    your dream website! ⬇️
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <h6 class="font-bold text-gray-800">Web Designing</h6>
-                  <p class="text-gray-500 text-sm">
-                    Web Magic Unfurled: Craft captivating interfaces, watch
-                    conversions soar!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-                <div>
-                  <h6 class="font-bold text-gray-800">Machine Learning</h6>
-                  <p class="text-gray-500 text-sm">
-                    Beyond Automation: Master AI Alchemy, Craft Intelligent
-                    Futures!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
-          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/services.html"
+            >Courses</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/Team.html"
+            >Team</a
+          >
+          <a
+            class="text-gray-700 hover:text-blue-600"
+            href="../../pages/contact.html"
+            >Contact Us</a
+          >
         </div>
 
         <!-- Register Button (Desktop) -->
@@ -104,32 +63,59 @@
           href="#"
           >Get in Touch</a
         >
+
+        <!-- Mobile Navbar Toggle -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
       </div>
 
-      <!-- Mobile Menu (Hidden by Default) -->
-      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Home</a
-        >
-        <a
-          class="block text-gray-700 hover:text-blue-600 py-2"
-          href="../../pages/about.html"
-          >About Us</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Courses</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
-          >Blogs</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Contact Us</a
-        >
-        <a
-          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
-          href="#"
-          >Get in Touch</a
-        >
+      <!-- Separate Mobile Navbar -->
+      <div
+        class="lg:hidden fixed top-0 left-0 w-full h-full bg-white z-20 hidden"
+        id="mobile-menu"
+      >
+        <div class="p-6">
+          <button
+            class="text-gray-700 text-2xl absolute top-4 right-6"
+            id="menu-close"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="flex flex-col space-y-4 mt-12">
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+              >Home</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/about.html"
+              >About Us</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/services.html"
+              >Courses</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/Team.html"
+              >Team</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/contact.html"
+              >Contact Us</a
+            >
+            <a
+              class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+              href="#"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -166,39 +152,41 @@
 
       <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
         <div class="border border-gray-300 shadow-lg rounded-lg p-6">
-          <h4 class="text-3xl font-semibold text-gray-800">Open and Direct</h4>
+          <h4 class="text-2xl font-semibold text-gray-800">
+            Collaborative Learning
+          </h4>
           <p class="text-gray-600 mt-2">
-            We are transparent and open. We communicate clearly and directly.
-            This is how we work, because we see this as the key to a successful
-            collaboration.
+            We foster an environment where team members actively share
+            knowledge, ensuring growth through collaboration and mentorship.
           </p>
         </div>
 
         <div class="border border-gray-300 shadow-lg rounded-lg p-6">
-          <h4 class="text-3xl font-semibold text-gray-800">Skilled</h4>
+          <h4 class="text-2xl font-semibold text-gray-800">Expert Guidance</h4>
           <p class="text-gray-600 mt-2">
-            Our highly skilled IT professionals specialize in Java, PHP, React,
-            Angular, Vue.js, and AWS. Clean code, simplicity, code reviews, and
-            test automation guarantee long-term stability and maintainability of
-            your solutions.
+            Our experienced mentors provide hands-on guidance to ensure
+            employees master critical skills, enabling effective and efficient
+            learning.
           </p>
         </div>
 
         <div class="border border-gray-300 shadow-lg rounded-lg p-6">
-          <h4 class="text-3xl font-semibold text-gray-800">Solution-driven</h4>
+          <h4 class="text-2xl font-semibold text-gray-800">
+            Continuous Improvement
+          </h4>
           <p class="text-gray-600 mt-2">
-            We combine our technical skills with business acumen and a critical
-            mindset to deliver the best possible solution for your business.
-            Adding value to your business is our ultimate goal.
+            We believe in lifelong learning, regularly updating our skills and
+            adopting new techniques to stay ahead in the industry.
           </p>
         </div>
 
         <div class="border border-gray-300 shadow-lg rounded-lg p-6">
-          <h4 class="text-3xl font-semibold text-gray-800">Trustworthy</h4>
+          <h4 class="text-2xl font-semibold text-gray-800">
+            Supportive Environment
+          </h4>
           <p class="text-gray-600 mt-2">
-            We are always here to support clients with advice and action. We
-            take ownership, responsibility, and pride in delivering the best
-            possible solutions.
+            We cultivate a positive atmosphere where team members feel
+            encouraged to ask questions, seek feedback, and grow together.
           </p>
         </div>
       </div>
@@ -448,6 +436,8 @@
       </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assests/js/custom.js"></script>
   </body>
 </html>

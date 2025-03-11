@@ -14,27 +14,21 @@
   <body>
     <!-- Navbar  -->
     <nav class="max-w-7xl py-4 bg-white shadow-sm">
-      <div class="container mx-auto flex items-center justify-between px-20">
+      <div
+        class="container mx-auto flex items-center justify-between px-10 md:px-20"
+      >
         <!-- Brand Logo -->
-        <a href="#" class="flex items-center">
+        <a href="/" class="flex items-center">
           <img
-            src="../../assests/img/Logo.png"
+            src="./assests/img/Logo.png"
             alt="Logo"
             class="w-16 h-16 rounded-full"
           />
         </a>
 
-        <!-- Navbar Toggle for Mobile -->
-        <button
-          class="lg:hidden text-gray-700 focus:outline-none"
-          id="menu-toggle"
-        >
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-
-        <!-- Navbar Links (Desktop) -->
+        <!-- Desktop Navbar -->
         <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
-          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="/"
             >Home</a
           >
           <a
@@ -42,139 +36,9 @@
             href="../../pages/about.html"
             >About Us</a
           >
-
-          <!-- Courses Dropdown -->
-          <div class="relative group">
-            <button class="text-gray-700 hover:text-blue-600 flex items-center">
-              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
-            </button>
-            <div
-              class="absolute left-36 transform -translate-x-1/2 w-[1100px] bg-white shadow-lg p-10 hidden group-hover:block max-h-96 overflow-y-auto z-10 rounded-lg"
-            >
-              <div class="grid grid-cols-4 gap-10">
-                <!-- Column 1: Web Development & Web Designing -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-code text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Web Development</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Click the brush below to unveil endless possibilities for
-                    your dream website! ⬇️
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-paint-brush text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Web Designing</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Web Magic Unfurled: Craft captivating interfaces, watch
-                    conversions soar!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-
-                <!-- Column 2: Machine Learning & Data Science -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-brain text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Machine Learning</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Beyond Automation: Master AI Alchemy, Craft Intelligent
-                    Futures!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-chart-line text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Data Science</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Unlock the power of data: Transform raw information into
-                    actionable insights.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-
-                <!-- Column 3: Mobile App Development & UI/UX Design -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-mobile-alt text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">
-                      Mobile App Development
-                    </h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Build the next big app: From concept to launch, we've got
-                    you covered.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-pencil-ruler text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">UI/UX Design</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Design experiences that delight: User-centric designs for
-                    seamless interactions.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-
-                <!-- Column 4: Cloud Computing & Cybersecurity -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-cloud text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Cloud Computing</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Scale with ease: Harness the power of the cloud for your
-                    business needs.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-shield-alt text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Cybersecurity</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Protect your digital assets: Stay ahead of threats with
-                    cutting-edge security solutions.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
-          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/services.html">Courses</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/Team.html">Team</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/contact.html">Contact Us</a>
         </div>
 
         <!-- Register Button (Desktop) -->
@@ -183,38 +47,59 @@
           href="#"
           >Get in Touch</a
         >
+
+        <!-- Mobile Navbar Toggle -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
       </div>
 
-      <!-- Mobile Menu (Hidden by Default) -->
-      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Home</a
-        >
-        <a
-          class="block text-gray-700 hover:text-blue-600 py-2"
-          href="../../pages/about.html"
-          >About Us</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Courses</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
-          >Blogs</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Contact Us</a
-        >
-        <a
-          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
-          href="#"
-          >Get in Touch</a
-        >
+      <!-- Separate Mobile Navbar -->
+      <div
+        class="lg:hidden fixed top-0 left-0 w-full h-full bg-white z-20 hidden"
+        id="mobile-menu"
+      >
+        <div class="p-6">
+          <button
+            class="text-gray-700 text-2xl absolute top-4 right-6"
+            id="menu-close"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="flex flex-col space-y-4 mt-12">
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+              >Home</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/about.html"
+              >About Us</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/services.html"
+              >Courses</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/Team.html"
+              >Team</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/contact.html"
+              >Contact Us</a
+            >
+            <a
+              class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+              href="#"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
 
     <!-- Hero  -->
     <div
-      class="relative min-h-screen flex items-center justify-center bg-fixed bg-cover bg-center"
+      class="relative min-h-screen flex items-center justify-center bg-fixed bg-cover bg-center z-10"
       style="
         background-image: url('https://img.freepik.com/free-photo/three-positive-students-browsing-tablet-computer-together_1262-15303.jpg?t=st=1741609109~exp=1741612709~hmac=10cee03d0e969c3229367de8a11c6b3afc079ec56c083023098a4fb0ceaebb62&w=1060');
         background-attachment: fixed;
@@ -225,12 +110,12 @@
 
       <!-- Grid Content -->
       <div
-        class="relative grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-sm p-6 rounded-lg shadow-lg max-w-5xl w-full mx-4"
+        class="relative grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-sm p-6 rounded-lg shadow-lg max-w-7xl w-full mx-4"
       >
         <!-- Text Section -->
         <div class="flex flex-col justify-center p-6">
-          <h1 class="text-4xl font-bold text-white mb-4">
-            What is Tech Academy
+          <h1 class="text-6xl font-bold text-white mb-4">
+            What is <span class="">Tech Academy</span> ?
           </h1>
           <p class="text-white text-lg text-justify">
             Our IT Skill Training program is designed for students and
@@ -482,28 +367,34 @@
       </div>
     </section>
 
-    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
-      <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
-        <i class="fas fa-graduation-cap text-blue-600"></i> University
-        Internship
-      </h2>
+    <div
+      class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 mb-10 gap-10"
+    >
+      <div>
+        <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+          <i class="fas fa-graduation-cap text-blue-600"></i> University
+          Internship
+        </h2>
 
-      <!-- When can I apply? -->
-      <div class="mt-4">
-        <h3 class="text-lg font-semibold flex items-center gap-2 text-gray-900">
-          <i class="fas fa-calendar-alt text-green-600"></i> When can I apply?
-        </h3>
-        <p class="mt-2 text-gray-700">
-          At <strong>TIS</strong>, we welcome internship applications during
-          <strong>spring</strong> as part of our
-          <strong>Tech Academy mentor program</strong>. Applications are
-          typically open in <strong>February and March</strong>. Please follow
-          our <strong>social media</strong> channels for the latest updates.
-        </p>
-        <p class="mt-2 text-red-500 font-medium">
-          <i class="fas fa-exclamation-circle"></i> Note: We cannot accept or
-          review applications outside of this period.
-        </p>
+        <!-- When can I apply? -->
+        <div class="mt-4">
+          <h3
+            class="text-lg font-semibold flex items-center gap-2 text-gray-900"
+          >
+            <i class="fas fa-calendar-alt text-green-600"></i> When can I apply?
+          </h3>
+          <p class="mt-2 text-gray-700">
+            At <strong>AIT</strong>, we welcome internship applications during
+            <strong>spring</strong> as part of our
+            <strong>Tech Academy mentor program</strong>. Applications are
+            typically open in <strong>February and March</strong>. Please follow
+            our <strong>social media</strong> channels for the latest updates.
+          </p>
+          <p class="mt-2 text-red-500 font-medium">
+            <i class="fas fa-exclamation-circle"></i> Note: We cannot accept or
+            review applications outside of this period.
+          </p>
+        </div>
       </div>
 
       <!-- How can I apply? -->
@@ -662,5 +553,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assests/js/custom.js"></script>
   </body>
 </html>

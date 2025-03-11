@@ -17,27 +17,21 @@
   </head>
   <body>
     <nav class="max-w-7xl py-4 bg-white shadow-sm">
-      <div class="container mx-auto flex items-center justify-between px-20">
+      <div
+        class="container mx-auto flex items-center justify-between px-10 md:px-20"
+      >
         <!-- Brand Logo -->
-        <a href="#" class="flex items-center">
+        <a href="/" class="flex items-center">
           <img
-            src="../../assests/img/Logo.png"
+            src="./assests/img/Logo.png"
             alt="Logo"
             class="w-16 h-16 rounded-full"
           />
         </a>
 
-        <!-- Navbar Toggle for Mobile -->
-        <button
-          class="lg:hidden text-gray-700 focus:outline-none"
-          id="menu-toggle"
-        >
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-
-        <!-- Navbar Links (Desktop) -->
+        <!-- Desktop Navbar -->
         <div class="hidden lg:flex items-center space-x-6" id="navbarNav">
-          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="#"
+          <a class="text-gray-700 hover:text-blue-600 font-semibold" href="/"
             >Home</a
           >
           <a
@@ -45,139 +39,9 @@
             href="../../pages/about.html"
             >About Us</a
           >
-
-          <!-- Courses Dropdown -->
-          <div class="relative group">
-            <button class="text-gray-700 hover:text-blue-600 flex items-center">
-              Courses <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
-            </button>
-            <div
-              class="absolute left-36 transform -translate-x-1/2 w-[1100px] bg-white shadow-lg p-10 hidden group-hover:block max-h-96 overflow-y-auto z-10 rounded-lg"
-            >
-              <div class="grid grid-cols-4 gap-10">
-                <!-- Column 1: Web Development & Web Designing -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-code text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Web Development</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Click the brush below to unveil endless possibilities for
-                    your dream website! ⬇️
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-paint-brush text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Web Designing</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Web Magic Unfurled: Craft captivating interfaces, watch
-                    conversions soar!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-
-                <!-- Column 2: Machine Learning & Data Science -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-brain text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Machine Learning</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Beyond Automation: Master AI Alchemy, Craft Intelligent
-                    Futures!
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-chart-line text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Data Science</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Unlock the power of data: Transform raw information into
-                    actionable insights.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-
-                <!-- Column 3: Mobile App Development & UI/UX Design -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-mobile-alt text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">
-                      Mobile App Development
-                    </h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Build the next big app: From concept to launch, we've got
-                    you covered.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-pencil-ruler text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">UI/UX Design</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Design experiences that delight: User-centric designs for
-                    seamless interactions.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-
-                <!-- Column 4: Cloud Computing & Cybersecurity -->
-                <div>
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-cloud text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Cloud Computing</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Scale with ease: Harness the power of the cloud for your
-                    business needs.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-
-                  <div class="flex items-center gap-2">
-                    <i class="fas fa-shield-alt text-blue-600"></i>
-                    <h6 class="font-bold text-gray-800">Cybersecurity</h6>
-                  </div>
-                  <p class="text-gray-500 text-sm mt-2">
-                    Protect your digital assets: Stay ahead of threats with
-                    cutting-edge security solutions.
-                  </p>
-                  <span class="text-blue-600 text-sm hover:underline"
-                    >Learn More</span
-                  >
-                  <hr class="my-2" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a class="text-gray-700 hover:text-blue-600" href="/">Blogs</a>
-          <a class="text-gray-700 hover:text-blue-600" href="#">Contact Us</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/services.html">Courses</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/Team.html">Team</a>
+          <a class="text-gray-700 hover:text-blue-600" href="../../pages/contact.html">Contact Us</a>
         </div>
 
         <!-- Register Button (Desktop) -->
@@ -186,32 +50,53 @@
           href="#"
           >Get in Touch</a
         >
+
+        <!-- Mobile Navbar Toggle -->
+        <button
+          class="lg:hidden text-gray-700 focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
       </div>
 
-      <!-- Mobile Menu (Hidden by Default) -->
-      <div class="lg:hidden hidden mt-4 px-4" id="mobile-menu">
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Home</a
-        >
-        <a
-          class="block text-gray-700 hover:text-blue-600 py-2"
-          href="../../pages/about.html"
-          >About Us</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Courses</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
-          >Blogs</a
-        >
-        <a class="block text-gray-700 hover:text-blue-600 py-2" href="#"
-          >Contact Us</a
-        >
-        <a
-          class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
-          href="#"
-          >Get in Touch</a
-        >
+      <!-- Separate Mobile Navbar -->
+      <div
+        class="lg:hidden fixed top-0 left-0 w-full h-full bg-white z-20 hidden"
+        id="mobile-menu"
+      >
+        <div class="p-6">
+          <button
+            class="text-gray-700 text-2xl absolute top-4 right-6"
+            id="menu-close"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="flex flex-col space-y-4 mt-12">
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="/"
+              >Home</a
+            >
+            <a
+              class="block text-gray-700 hover:text-blue-600 py-2"
+              href="../../pages/about.html"
+              >About Us</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/services.html"
+              >Courses</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/Team.html"
+              >Team</a
+            >
+            <a class="block text-gray-700 hover:text-blue-600 py-2" href="../../pages/contact.html"
+              >Contact Us</a
+            >
+            <a
+              class="block bg-blue-600 text-white px-6 py-2 rounded-full mt-2 text-center hover:bg-blue-700"
+              href="#"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -232,7 +117,7 @@
             Meet AIT
           </h3>
           <h1 class="text-xl md:text-7xl font-bold py-4">
-            Empowering your <span class="text-blue-400">businesses</span> 
+            Empowering your <span class="text-blue-400">businesses</span>
           </h1>
 
           <p class="text-gray-300 font-medium text-justify">
